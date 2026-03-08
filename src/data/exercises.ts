@@ -11,7 +11,7 @@ export const EXERCISES: Exercise[] = [
     repeticoes: "10 ciclos (100 batidas).",
     beneficios: "Ativa o powerhouse e estimula a circulação.",
     nivel: "Iniciante",
-    imagem: "public/images/1.png"
+    imagem: "./public/images/1.png"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const EXERCISES: Exercise[] = [
     repeticoes: "3 a 5 vezes.",
     beneficios: "Mobilidade da coluna e força abdominal.",
     nivel: "Iniciante",
-    imagem: "public/images/TheRollUp.png"
+    imagem: "./public/images/TheRollUp.png"
   },
   {
     id: 3,
