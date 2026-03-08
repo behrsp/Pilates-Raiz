@@ -11,7 +11,7 @@ export const EXERCISES: Exercise[] = [
     repeticoes: "10 ciclos (100 batidas).",
     beneficios: "Ativa o powerhouse e estimula a circulação.",
     nivel: "Iniciante",
-    imagem: "./images/1.png"
+    imagem: "public/images/1.png"
   },
   {
     id: 2,
