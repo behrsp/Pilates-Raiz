@@ -23,7 +23,7 @@ export const EXERCISES: Exercise[] = [
     repeticoes: "3 a 5 vezes.",
     beneficios: "Mobilidade da coluna e força abdominal.",
     nivel: "Iniciante",
-    imagem: "images/The Roll Up.png"
+    imagem: "images/TheRollUp.png"
   },
   {
     id: 3,
