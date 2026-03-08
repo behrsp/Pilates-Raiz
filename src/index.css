@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pilates-green: #2D4033;
+  --color-pilates-beige: #F5F5DC;
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-pilates-beige text-pilates-green font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-pilates-green/10 rounded-2xl shadow-sm;
+}
+
+.btn-primary {
+  @apply bg-pilates-green text-white px-6 py-3 rounded-full font-medium transition-all hover:opacity-90 active:scale-95;
+}
+
+.btn-secondary {
+  @apply border-2 border-pilates-green text-pilates-green px-6 py-3 rounded-full font-medium transition-all hover:bg-pilates-green hover:text-white active:scale-95;
+}
