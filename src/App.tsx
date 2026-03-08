@@ -353,7 +353,7 @@ export default function App() {
             onClick={() => setSelectedExercise(ex)}
           >
             <div className="flex justify-between items-start mb-2">
-              <span className="text-xs font-bold uppercase tracking-widest opacity-50">#{ex.id}</span>
+              <span className="text-xs font-bold uppercase tracking-widest opacity-70">#{ex.id}</span>
               <div className="flex items-center gap-2">
                 <span className={`text-[10px] px-2 py-1 rounded-full border ${
                   ex.nivel === 'Iniciante' ? 'border-emerald-500 text-emerald-600' :
@@ -365,7 +365,7 @@ export default function App() {
               </div>
             </div>
             <h3 className="text-xl mb-1">{ex.nome_en}</h3>
-            <p className="text-sm italic opacity-60">{ex.nome_pt}</p>
+            <p className="text-sm italic opacity-80">{ex.nome_pt}</p>
 
             <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
               <button 
@@ -411,7 +411,7 @@ export default function App() {
                 <div className="flex justify-between items-start mb-6">
                   <div>
                     <h2 className="text-4xl mb-2">{ex.nome_en}</h2>
-                    <p className="text-xl italic opacity-60">{ex.nome_pt}</p>
+                    <p className="text-xl italic opacity-80">{ex.nome_pt}</p>
                   </div>
                   <button onClick={() => setSelectedExercise(null)} className="p-2 hover:bg-pilates-green/10 rounded-full">
                     <ChevronLeft className="rotate-90" />
@@ -429,24 +429,24 @@ export default function App() {
 
                 <div className="space-y-6">
                   <section>
-                    <h4 className="font-bold uppercase text-xs tracking-widest mb-2 opacity-50">Posição Inicial</h4>
+                    <h4 className="font-bold uppercase text-xs tracking-widest mb-2 opacity-70">Posição Inicial</h4>
                     <p>{ex.posicao_inicial}</p>
                   </section>
                   <section>
-                    <h4 className="font-bold uppercase text-xs tracking-widest mb-2 opacity-50">Execução</h4>
+                    <h4 className="font-bold uppercase text-xs tracking-widest mb-2 opacity-70">Execução</h4>
                     <p>{ex.execucao}</p>
                   </section>
                   <section>
-                    <h4 className="font-bold uppercase text-xs tracking-widest mb-2 opacity-50">Respiração</h4>
+                    <h4 className="font-bold uppercase text-xs tracking-widest mb-2 opacity-70">Respiração</h4>
                     <p>{ex.respiracao}</p>
                   </section>
                   <div className="grid grid-cols-2 gap-4 pt-4 border-t border-pilates-green/10">
                     <div>
-                      <h4 className="font-bold uppercase text-xs tracking-widest mb-1 opacity-50">Repetições</h4>
+                      <h4 className="font-bold uppercase text-xs tracking-widest mb-1 opacity-70">Repetições</h4>
                       <p className="font-medium">{ex.repeticoes}</p>
                     </div>
                     <div>
-                      <h4 className="font-bold uppercase text-xs tracking-widest mb-1 opacity-50">Benefícios</h4>
+                      <h4 className="font-bold uppercase text-xs tracking-widest mb-1 opacity-70">Benefícios</h4>
                       <p className="text-sm">{ex.beneficios}</p>
                     </div>
                   </div>
@@ -506,9 +506,9 @@ export default function App() {
               exit={{ opacity: 0, x: -20 }}
               className="w-full text-center"
             >
-              <span className="text-xs font-bold uppercase tracking-[0.3em] opacity-40 mb-4 block">Exercício {ex.id}</span>
+              <span className="text-xs font-bold uppercase tracking-[0.3em] opacity-60 mb-4 block">Exercício {ex.id}</span>
               <h2 className="text-5xl mb-2">{ex.nome_en}</h2>
-              <p className="text-xl italic opacity-60 mb-8">{ex.nome_pt}</p>
+              <p className="text-xl italic opacity-80 mb-8">{ex.nome_pt}</p>
 
               <div className="mb-8 rounded-3xl overflow-hidden shadow-2xl border-8 border-white max-w-md mx-auto aspect-video">
                 <img 
@@ -521,7 +521,7 @@ export default function App() {
 
               <div className="grid gap-8 text-left">
                 <div className="glass-card p-6">
-                  <h4 className="font-bold uppercase text-[10px] tracking-widest mb-3 opacity-50 flex items-center gap-2">
+                  <h4 className="font-bold uppercase text-[10px] tracking-widest mb-3 opacity-70 flex items-center gap-2">
                     <RotateCcw size={14} /> Posição e Execução
                   </h4>
                   <p className="text-lg leading-relaxed">{ex.posicao_inicial} {ex.execucao}</p>
@@ -529,11 +529,11 @@ export default function App() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="glass-card p-6 border-l-4 border-pilates-green">
-                    <h4 className="font-bold uppercase text-[10px] tracking-widest mb-2 opacity-50">Respiração</h4>
+                    <h4 className="font-bold uppercase text-[10px] tracking-widest mb-2 opacity-70">Respiração</h4>
                     <p>{ex.respiracao}</p>
                   </div>
                   <div className="glass-card p-6 border-l-4 border-pilates-green">
-                    <h4 className="font-bold uppercase text-[10px] tracking-widest mb-2 opacity-50">Repetições</h4>
+                    <h4 className="font-bold uppercase text-[10px] tracking-widest mb-2 opacity-70">Repetições</h4>
                     <p className="text-xl font-serif">{ex.repeticoes}</p>
                   </div>
                 </div>
@@ -593,18 +593,18 @@ export default function App() {
             <div className="text-4xl font-serif opacity-20 w-12 shrink-0">0{i+1}</div>
             <div>
               <h3 className="text-2xl mb-2">{p.title}</h3>
-              <p className="text-lg opacity-70 leading-relaxed">{p.description}</p>
+              <p className="text-lg opacity-90 leading-relaxed">{p.description}</p>
             </div>
           </motion.div>
         ))}
       </div>
 
-      <div className="mt-16 p-8 glass-card bg-pilates-green text-pilates-beige">
+      <div className="mt-16 p-8 rounded-3xl bg-pilates-green text-pilates-beige shadow-xl">
         <h3 className="text-2xl mb-4 text-white">O que é Contrologia?</h3>
-        <p className="opacity-90 leading-relaxed">
+        <p className="opacity-100 leading-relaxed text-lg">
           "A Contrologia é o controle consciente de todos os movimentos musculares do corpo. É a utilização e aplicação correta dos princípios mecânicos que abrangem a estrutura do esqueleto, um conhecimento completo dos mecanismos funcionais do corpo e o entendimento total dos princípios de equilíbrio e gravidade aplicados a cada movimento."
         </p>
-        <p className="mt-4 font-serif italic">— Joseph Pilates</p>
+        <p className="mt-4 font-serif italic text-white/80">— Joseph Pilates</p>
       </div>
     </div>
   );
@@ -623,10 +623,10 @@ export default function App() {
           <RotateCcw size={40} className="text-pilates-green" />
         </div>
         <h3 className="text-3xl mb-4">Preservando a História</h3>
-        <p className="text-lg opacity-70 leading-relaxed mb-6">
+        <p className="text-lg opacity-90 leading-relaxed mb-6">
           Este aplicativo foi desenvolvido para ser um guia fiel aos ensinamentos originais de Joseph Pilates, conforme descritos em sua obra "Return to Life Through Contrology".
         </p>
-        <p className="text-lg opacity-70 leading-relaxed">
+        <p className="text-lg opacity-90 leading-relaxed">
           Nossa missão é democratizar o acesso à sequência clássica, mantendo a precisão técnica e o respeito aos princípios que tornam este método único.
         </p>
       </div>
